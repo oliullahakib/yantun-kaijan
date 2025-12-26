@@ -45,3 +45,8 @@ const FoodsPage = async ({ searchParams }) => {
 };
 
 export default FoodsPage;
+
+export const metadata = {
+  title: "All Foods | Yantun Kaijan",
+  description: "All Foods of Yantun Kaijan ",
+};
