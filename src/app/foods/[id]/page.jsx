@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 export function generateStaticParams() {
@@ -42,9 +43,16 @@ const Page = async ({ params }) => {
   return (
     <div className="max-w-3xl mx-auto p-6">
       {/* Food Image */}
-      <img
+      {/* <img
         src={foodImg}
         alt={title}
+        className="w-full h-72 object-cover rounded-xl shadow"
+      /> */}
+      <Image
+        src={foodImg}
+        alt={title}
+        width={500}
+        height={300}
         className="w-full h-72 object-cover rounded-xl shadow"
       />
 
